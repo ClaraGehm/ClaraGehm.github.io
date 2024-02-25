@@ -6,11 +6,12 @@ from django.http import HttpResponse
 
 def inputPlant(request):
     if request.method == 'GET':
-        plants = request.GET.get('plantSearch')
+        plants = request.GET.get('plantSearch','')
 
-        new_plant = SearchPlant(newplant = plants)
-        new_plant.save()
-        return HttpResponse('Received: ' + new_plant)
+        print("Received:", plants)
+        #new_plant = SearchPlant(newplant = plants)
+        #new_plant.save()
+        return HttpResponse('Received: ' + plants)
 
-    text = 'does this work'
-    return render(request, "pages/index.html", {'text': text})
+    #text = 'does this work'
+    #return render(request, "pages/index.html", {'text': text})
