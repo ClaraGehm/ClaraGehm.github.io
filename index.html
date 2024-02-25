@@ -32,7 +32,7 @@
 
 <!-- Search Bar -->
 <body>
-  <form action="/submit/" method="GET"> {% csrf_token %}
+  <form action="/submit/" method="get"> {% csrf_token %}
     <div class="input-group rounded" id="container">
         <input type="search" class="form-control rounded" placeholder="Search for plants" aria-label="Search for plants" aria-describedby="search-addon" name = "plantSearch"/>
         <span class="input-group-text border-0" id="search-addon">
