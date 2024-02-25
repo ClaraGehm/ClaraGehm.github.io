@@ -3,6 +3,7 @@ claragehm.github.io/claragehm.github.io/about
     
     const searchTerm = document.getElementById('input').value;
 
+    window.alert('Tomatoes are a #c20003 color fruit that can grow up to 1828.8mm tall.  The fruit is very delicious and messy')
     // Read the CSV file
     fetch('ourData.csv') // Replace 'data.csv' with the path to your CSV file
         .then(response => response.text())
