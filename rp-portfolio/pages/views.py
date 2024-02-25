@@ -1,6 +1,13 @@
 from django.shortcuts import render
+from .models import SearchPlant
 
 # Create your views here.
 
 def home(request):
-    return render(request, "pages/home.html", {})
+    if request.method == 'POST':
+        plants = request.POST['plantSearch']
+
+        new_plant = SearchPlant(newplant = plants)
+        new_plant.save()
+    text = 'does this work'
+    return render(request, "pages/index.html", {'text': text})

@@ -2,7 +2,7 @@
     list-style-type: none;
     
 }
-header {
+.navbar {
     position: fixed;
     left: 0;
     right: 0;
@@ -12,16 +12,26 @@ header {
     align-items: center;
     
 }
-header * {
+.navbar * {
     display: inline;
 }
-header li{
+.navbar li{
     margin: 20px;
 }
-header li a{
+.navbar li a{
     color: #25419c;
     text-decoration: none;
 }
-header li a b{
+.navbar li b a{
     font-size: 20px;
+}
+
+#mon {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.plants {
+    text-align: center;
+    margin: 40px;
 }
