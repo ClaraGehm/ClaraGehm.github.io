@@ -4,8 +4,8 @@ from .models import SearchPlant
 # Create your views here.
 
 def home(request):
-    if request.method == 'POST':
-        plants = request.POST['plantSearch']
+    if request.method == 'GET':
+        plants = request.GET['plantSearch']
 
         new_plant = SearchPlant(newplant = plants)
         new_plant.save()
