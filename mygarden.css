@@ -1,0 +1,37 @@
+.navbar ul{
+    list-style-type: none;
+    
+}
+.navbar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    
+}
+.navbar * {
+    display: inline;
+}
+.navbar li{
+    margin: 20px;
+}
+.navbar li a{
+    color: #25419c;
+    text-decoration: none;
+}
+.navbar li b a{
+    font-size: 20px;
+}
+
+#mon {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.plants {
+    text-align: center;
+    margin: 40px;
+}
