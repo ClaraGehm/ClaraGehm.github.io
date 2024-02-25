@@ -5,7 +5,7 @@ claragehm.github.io/claragehm.github.io/about
 
     window.alert('Tomatoes are a #c20003 color fruit that can grow up to 1828.8mm tall.  The fruit is very delicious and messy')
     // Read the CSV file
-    fetch('ourData.csv') // Replace 'data.csv' with the path to your CSV file
+    /*fetch('ourData.csv') // Replace 'data.csv' with the path to your CSV file
         .then(response => response.text())
         .then(csv => {
             const rows = csv.split('\n');
@@ -29,4 +29,5 @@ claragehm.github.io/claragehm.github.io/about
     function displaySearchResult(found) {
         const outputDiv = document.getElementById('output');
         outputDiv.textContent = found ? 'Search term found in CSV file.' : 'Search term not found in CSV file.';
+    */
     }
